@@ -1,16 +1,16 @@
 const countdown = ()=>{
   const now = new Date();
   //倒數計時開始時間
-  const target_start = new Date('2024/07/12 00:00:00'); 
+  const target_start = new Date('2024/07/22 00:00:00'); 
   const differ_start = target_start.getTime() - now.getTime();
   //倒數計時開始區間
-  const target_mid_start = new Date('2024/07/12 00:00:00'); 
+  const target_mid_start = new Date('2024/07/22 00:00:00'); 
   const differ_mid_start = target_mid_start.getTime() - now.getTime();
   //倒數計時結束區間
-  const target_mid_end = new Date('2024/07/15 00:00:00'); 
+  const target_mid_end = new Date('2024/07/25 00:00:00'); 
   const differ_mid_end = target_mid_end.getTime() - now.getTime();
   //倒數計時結束時間
-  const target_end = new Date('2024/07/15 23:59:59'); 
+  const target_end = new Date('2024/07/25 23:59:59'); 
   const differ_end = target_end.getTime() - now.getTime();
 // console.log(differ_end)
 //  console.log(differ_start)
@@ -44,4 +44,4 @@ if((differ_end > 0) && (differ_start < 0) && ((differ_mid_start > 0) || (differ_
     document.querySelectorAll('#countdown .day')[i].textContent = String(day).padStart(2, '0');
   }
 }
-setInterval(countdown, 1);
+setInterval(countdown, 1000);
