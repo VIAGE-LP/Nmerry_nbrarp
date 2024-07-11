@@ -9,14 +9,17 @@ $(document).ready(function () {
     $('a[href="#size"]').click(scrollToSize);
     $('.coupon_btn').click(scrollToSize);
 
-    // copy折扣碼_多個
-    // function copybtn(money, couponcode,specail) {
-    //     // 複製（利用 Clipboard API 中的寫入功能）
-    //     navigator.clipboard.writeText(couponcode);
-    //     // 提醒視窗
-    //     confirm(`您已成功複製折扣碼：${couponcode}！\n結帳時於購物車輸入，即享活動優惠折扣+整單再折${money}元\n${specail}`)
-    //     popupModal.hide();
-    // }
+    // copy折扣碼函式
+    function copybtn(money, couponcode) {
+        // 複製（利用 Clipboard API 中的寫入功能）
+        navigator.clipboard.writeText(couponcode);
+        // 提醒視窗
+        confirm(`恭喜您成功複製折扣碼！\n期間內不限方案，\n請於購物車「優惠代碼」欄位輸入 即可享優惠金額再折${money}元\n優惠代碼:${couponcode}`);
+    }
+
+    $(".copybtn").on("click", function () {
+        copybtn(80, "nbra24ss");
+    });
 
     // $(".coupon_200").on("click", function () {
     //     copybtn(200, "200N2406");
