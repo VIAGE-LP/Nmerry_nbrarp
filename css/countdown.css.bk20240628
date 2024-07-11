@@ -1,0 +1,35 @@
+/* 倒數計時器 */
+.countdown_box{
+    width:750px;
+    margin:0 auto;
+    background-color: #b8c688;
+    text-shadow: 2px 2px 2px #6c9774,-2px 2px 2px #6c9774,2px -2px 2px #6c9774,-2px -2px 2px #6c9774;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.countdown_box #cdtimer,.countdown_box #cdtimer_day{
+    display: none;
+}
+.countdown{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.main-content{
+    display: flex;
+}
+.timer-box .number{
+    color: #ffff6c;
+    padding-left: 8px;
+}
+
+@media screen and (max-width: 768px){
+    .countdown_box{
+        width:100%;
+        font-size: 1.5rem;
+    }
+}
+
+/* 倒數計時器 */

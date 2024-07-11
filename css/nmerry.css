@@ -1,0 +1,166 @@
+#nmerry {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 1200px;
+}
+#nmerry h1 ,
+#nmerry h2 ,
+#nmerry p {
+  margin: 0 auto;
+  padding: 0;
+}
+
+#nmerry img {
+  max-width: 100%;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* vertical-align: bottom; */
+}
+#nmerry img.img-t {
+  vertical-align: top;
+}
+
+#nmerry .movie__box {
+  display: block;
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+  z-index: 2;
+}
+#nmerry .movie__item {
+  display: block;
+  position: absolute;
+  bottom:103px;
+  left: 150px;
+  width: 800px;
+  height: 450px;
+}
+/*----------------------------------*/
+
+#nmerry .size__acd {
+  width: 1000px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-bottom: 4px solid #896e55;
+}
+
+/*-------------------------------*/
+#nmerry .size {
+  overflow: hidden;
+}
+#nmerry .size__subtitle {
+  margin: 50px auto;
+}
+#nmerry .size__acd {
+    display: block;
+    margin: 30px auto;
+}
+#nmerry .acd__btn {
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+#nmerry .acd__btn .acd__bal {
+  display: block;
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  width: 230px;
+  z-index: 4;
+  -webkit-animation-name: expand;
+  -moz-animation-name: expand;
+  -o-animation-name: expand;
+  animation-name: expand;
+  -webkit-animation-duration: 1.6s;
+  -moz-animation-duration: 1.6s;
+  -o-animation-duration: 1.6s;
+  animation-duration: 1.6s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes expand {
+  from, 0% {
+    -webkit-transform: scale3d(1,1,1) translate3d(0,0,0);
+    -ms-transform: scale3d(1,1,1) translate3d(0,0,0);
+    -o-transform: scale3d(1,1,1) translate3d(0,0,0);
+    transform: scale3d(1,1,1) translate3d(0,0,0);
+  }
+  50% {
+    -webkit-transform: scale3d(1.08,1.15,1) translate3d(0,-8%,0);
+    -ms-transform: scale3d(1.08,1.15,1) translate3d(0,-8%,0);
+    -o-transform: scale3d(1.08,1.15,1) translate3d(0,-8%,0);
+    transform: scale3d(1.08,1.15,1) translate3d(0,-8%,0);
+  }
+  to, 100% {
+    -webkit-transform: scale3d(1,1,1) translate3d(0,0,0);
+    -ms-transform: scale3d(1,1,1) translate3d(0,0,0);
+    -o-transform: scale3d(1,1,1) translate3d(0,0,0);
+    transform: scale3d(1,1,1) translate3d(0,0,0);
+  }
+}
+@keyframes expand {
+  from, 0% {
+    -webkit-transform: scale3d(1,1,1) translate3d(0,0,0);
+    -ms-transform: scale3d(1,1,1) translate3d(0,0,0);
+    -o-transform: scale3d(1,1,1) translate3d(0,0,0);
+    transform: scale3d(1,1,1) translate3d(0,0,0);
+  }
+  50% {
+    -webkit-transform: scale3d(1.08,1.15,1) translate3d(0,-8%,0);
+    -ms-transform: scale3d(1.08,1.15,1) translate3d(0,-8%,0);
+    -o-transform: scale3d(1.08,1.15,1) translate3d(0,-8%,0);
+    transform: scale3d(1.08,1.15,1) translate3d(0,-8%,0);
+  }
+  to, 100% {
+    -webkit-transform: scale3d(1,1,1) translate3d(0,0,0);
+    -ms-transform: scale3d(1,1,1) translate3d(0,0,0);
+    -o-transform: scale3d(1,1,1) translate3d(0,0,0);
+    transform: scale3d(1,1,1) translate3d(0,0,0);
+  }
+}
+#nmerry .size__acd > .acd__btn:before {
+    content: "";
+    display: block;
+    width: 46px;
+    height:0;
+    padding-bottom: 46px;
+    background:url(../img/09/acd_ar.png) no-repeat 50% 50%;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: absolute;
+    top: 60px;
+    right: 290px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+#nmerry .size__acd > .acd__btn[data-boxname="size--s"]:before {
+  content: "";
+  top: 42px;
+  right: 270px
+}
+#nmerry .size__acd > .acd__btn[data-boxname="size--3l"]:before {
+  content: "";
+  top: 65px;
+  right: 227px;
+}
+ 
+#nmerry .size__acd > .acd__btn--open:before {
+    content: "";
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+/*----------------------*/

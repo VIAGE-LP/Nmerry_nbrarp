@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border: none;
+}
+
+.main {
+    width: 750px;
+    display: block;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+        width: 100%;
+    }
+
+    .line_btn{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.buybtn{
+    cursor:pointer;
+    width: 200px;
+    position: fixed;
+    right: 0;
+    bottom: 76px;
+    z-index: 99;
+}
+.buybtn img{width: 100%; height: auto;}
+@media screen and (max-width: 768px){
+    .buybtn{
+        width: 36%;
+        max-width: 170px;
+    }
+}
+
+.popup_copybtn:hover{
+    opacity: 0.8;
+}

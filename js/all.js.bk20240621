@@ -1,0 +1,56 @@
+$(document).ready(function () {
+    // 定义点击事件处理程序
+    function scrollToSize(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $('#size').offset().top
+        }, 900);
+    }
+    $('a[href="#size"]').click(scrollToSize);
+    $('.coupon_btn').click(scrollToSize);
+    // copy折扣碼 
+    // $(".copybtn").on("click", function () {
+    //     var text = '100N2404';
+    //     var textarea = document.getElementById("event_couponcode");
+    //     // 賦值
+    //     textarea.innerText = text;
+    //     // 選中
+    //     window.getSelection().selectAllChildren(textarea);
+    //     // 複製
+    //     document.execCommand('copy', true);
+
+    //     confirm(`恭喜您獲得100元換季折扣碼！\n此為期間限定折扣，有效期限至2024年4月15日止。敬請把握機會！\n請於購物車「優惠代碼」欄位輸入，即可享總結帳金額再折100元。\n優惠代碼 :${text}。`)
+    //     if ($(".copybtn")==$(".buybtn")) {
+    //         $('html, body').animate({
+    //             scrollTop: $('#size').offset().top,
+    //         }, 900);
+    //     }
+    // });
+
+    // copy折扣碼_多個
+    function copybtn(money, couponcode,specail) {
+        // 複製（利用 Clipboard API 中的寫入功能）
+        navigator.clipboard.writeText(couponcode);
+        // 提醒視窗
+        confirm(`您已成功複製折扣碼：${couponcode}！\n結帳時於購物車輸入，即享活動優惠折扣+整單再折${money}元\n${specail}`)
+        popupModal.hide();
+    }
+
+    // $(".coupon_200").on("click", function () {
+    //     copybtn(200, "200N2406");
+    // });
+    $(".coupon_150").on("click", function () {
+        copybtn(150, "150N2406","");
+    });
+    $(".coupon_100").on("click", function () {
+        copybtn(100, "100N2406","");
+    });
+
+
+    // 加碼popup
+    let popupModal = new bootstrap.Modal(document.getElementById("lotterypopup"));
+    popupModal.show();
+    $(".popup_copybtn").on("click", function () {
+        copybtn(200, "200N2406","此為期間限定折扣，有效期限至2024年6月30日止。敬請把握機會！");
+    });
+});
