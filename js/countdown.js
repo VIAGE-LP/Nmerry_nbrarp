@@ -1,33 +1,18 @@
-const countdown = ()=>{
+const countdown = () => {
   const now = new Date();
-  //倒數計時開始時間
-  const target_start = new Date('2024/07/22 00:00:00'); 
-  const differ_start = target_start.getTime() - now.getTime();
-  //倒數計時開始區間
-  const target_mid_start = new Date('2024/07/22 00:00:00'); 
-  const differ_mid_start = target_mid_start.getTime() - now.getTime();
-  //倒數計時結束區間
-  const target_mid_end = new Date('2024/07/25 00:00:00'); 
-  const differ_mid_end = target_mid_end.getTime() - now.getTime();
-  //倒數計時結束時間
-  const target_end = new Date('2024/07/25 23:59:59'); 
-  const differ_end = target_end.getTime() - now.getTime();
-// console.log(differ_end)
-//  console.log(differ_start)
-// console.log(differ_mid_start)
-// console.log(differ_mid_end)
+  const day_start = new Date('2024/07/22 00:00:00'); // 天倒數 開始時間
+  const sec_start = new Date('2024/07/25 00:00:00'); // 秒倒數 開始時間
+  const end = new Date('2024/07/25 23:59:59'); // 結束時間
 
-if((differ_end > 0) && (differ_start < 0) && ((differ_mid_start > 0) || (differ_mid_end < 0))){
-  $("#cdtimer").show();
-  $("#cdtimer_day").hide();
-}else if((differ_end > 0) && (differ_start < 0) && (differ_mid_start < 0) && (differ_mid_end > 0)){
-  $("#cdtimer").hide();
-  $("#cdtimer_day").show();
-}else if((differ_end < 0)){
-  $("#cdtimer").hide();
-  $("#cdtimer_day").hide();
-}
+  if ((now >= day_start) && (now < sec_start)) {
+    $("#cdtimer_day").show();
+    $("#cdtimer").hide();
+  } else if ((now >= sec_start) && (now < end)) {
+    $("#cdtimer_day").hide();
+    $("#cdtimer").show();
+  }
 
+  const differ_end = end.getTime() - now.getTime();
   const ms = Math.floor(differ_end );
   const sec = Math.floor(differ_end  / 1000 % 60);
   const min = Math.floor(differ_end / 1000 / 60 % 60);
@@ -38,10 +23,10 @@ if((differ_end > 0) && (differ_start < 0) && ((differ_mid_start > 0) || (differ_
   document.querySelector('#countdown .seconds').textContent = String(sec).padStart(2, '0');
   document.querySelector('#countdown .minutes').textContent = String(min).padStart(2, '0');
   document.querySelector('#countdown .hours').textContent = String(hour).padStart(2, '0');
-  document.querySelectorAll('#countdown .day').textContent = String(day).padStart(2, '0');
   for(i=0;i<=document.querySelectorAll('#countdown .day').length;i++){
     if(document.querySelectorAll('#countdown .day')[i]!=undefined)
     document.querySelectorAll('#countdown .day')[i].textContent = String(day).padStart(2, '0');
   }
+
 }
 setInterval(countdown, 1000);
