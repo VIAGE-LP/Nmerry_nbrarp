@@ -90,16 +90,12 @@
                     </div>
                 </div>
                 <div id="nmerry">
-                    <a href="#offer">
-                        <img src="./img/01_banner.png" alt="" class="copybtn" style="cursor: pointer;">
-                    </a>
+                    <img src="./img/01_banner.png" alt="" class="copybtn" style="cursor: pointer;">
                     <img src="./img/01.png" alt="">
-                    <a href="#offer">
-                        <img src="./img/event.png" alt="" class="copybtn" style="cursor: pointer;">
-                    </a>
+                    <img src="./img/event.png" alt="" class="copybtn" style="cursor: pointer;">
                     <img src="./img/02.png" alt="">
                     <a href="#size">
-                        <img src="./img/03_offer.png" alt="" id="offer" style="cursor: pointer;">
+                        <img src="./img/03_offer.png" alt="" style="cursor: pointer;">
                     </a>
                     <div class="movie__box">
                         <img src="./img/04.png" alt="">
