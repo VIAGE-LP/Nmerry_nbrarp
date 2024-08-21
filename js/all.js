@@ -18,4 +18,26 @@ $(document).ready(function () {
         copybtn("24ns08ss");
     });
 
+
+    //draw popup視窗的copy折扣碼
+    function popup_copy() {
+        navigator.clipboard.writeText("202408SS");
+        confirm(`恭喜您成功複製轉盤折扣碼！\n請於購物車「優惠代碼」欄位輸入，\n即享最高會員優惠後再折$200元\n優惠代碼：202408SS`)
+    }
+
+    const Urlhash = location.hash;
+    if (Urlhash == "#draw") {
+        let drawModal = new bootstrap.Modal(document.getElementById("draw_popup"));
+        //一進入畫面就顯示 draw popup
+        drawModal.show();
+        setTimeout(() => {
+            $("#draw_gif").attr("src", "img/popup_copy.png");
+            $("#draw_gif").css("cursor", "pointer");
+            $("#draw_gif").on("click", function () {
+                popup_copy();
+                drawModal.hide();
+            });
+        }, 6000);
+    } 
+
 });

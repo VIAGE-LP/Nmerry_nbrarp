@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 
     <!-- ※LP用|編集削除禁止 -->
-
+    
     <!-- ※LP用|編集削除禁止※ -->
 
     <!-- Google Tag Manager -->
@@ -62,17 +62,6 @@
             <!-- selectProductWithProduct -->
             <!-- ▼自由編集箇所▼ -->
             <div class="main">
-                <!-- draw popup-->
-                <div class="modal fade" id="draw_popup" tabindex="-1" aria-labelledby="drawLabel" aria-hidden="true">
-                    <div class="modal-dialog" style="margin: 18vh auto;padding: 5%;">
-                        <div class="modal-content" style="border: none;background: transparent;">
-                            <div class="modal-body mx-auto p-0" style="text-align: center;">
-                                <img id="draw_gif" class="w-100" src="img/popup_draw.gif" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="countdown_box">
                     <div id="cdtimer" style="display: none;">
                         <div class="countdown">
