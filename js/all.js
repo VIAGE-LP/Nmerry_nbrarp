@@ -1,4 +1,14 @@
 $(document).ready(function () {
+    //時間到自動切換圖片
+    const switch_time = new Date('2024/08/24 00:00:00'); // 切換時間
+    const now_time = new Date();
+    if(now_time < switch_time){
+        $(".original_img").show();
+    }else{
+        $(".switch_img").show();
+    }
+
+
     $('a[href="#size"]').click(function (e) {
         e.preventDefault();
         $('html , body').animate({

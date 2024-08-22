@@ -102,13 +102,11 @@
                 </div>
                 <div id="nmerry">
                     <a href="#offer">
-                        <img src="./img/01_banner.png" alt="" class="copybtn original_img" style="cursor: pointer;display: none;">
-                        <img src="./img/switch_0824/01_banner.png" alt="" class="copybtn switch_img" style="cursor: pointer;display: none;">
+                        <img src="./img/01_banner.png" alt="" class="copybtn" style="cursor: pointer;">
                     </a>
                     <img src="./img/01.png" alt="">
                     <a href="#offer">
-                        <img src="./img/event.png" alt="" class="copybtn original_img" style="cursor: pointer;display: none;">
-                        <img src="./img/switch_0824/event.png" alt="" class="copybtn switch_img" style="cursor: pointer;display: none;">
+                        <img src="./img/event.png" alt="" class="copybtn" style="cursor: pointer;">
                     </a>
                     <img src="./img/02.png" alt="">
                     <a href="#size">
