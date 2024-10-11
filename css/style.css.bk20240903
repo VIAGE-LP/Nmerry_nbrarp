@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border: none;
+}
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.main img {
+    width: 750px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .main img {
+        width: 100%;
+    }
+
+    .main .line_btn {
+        width: 90%;
+    }
+}
+
+#nmerry .movie__box {
+    display: block;
+    position: relative;
+    width: 750px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+#nmerry .movie__item {
+    display: block;
+    position: absolute;
+    bottom: 48px;
+    left: 38px;
+}
+
+#nmerry .movie__size {
+    width: 675px;
+    height: 400px;
+    overflow: hidden;
+    display: block;
+    padding-bottom: 56.417%;
+}
+#nmerry .movie__item iframe, #nmerry .movie__item video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #nmerry .movie__box {
+        width: 100%;
+    }
+    #nmerry .movie__box {
+        position: relative;
+      }
+      #nmerry .movie__item {
+          bottom: 3%;
+          left: 5%;
+          width: 90%;
+      }
+      #nmerry .movie__size {
+          width: 100%;
+          height: 0;
+      }
+}

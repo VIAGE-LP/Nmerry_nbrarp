@@ -59,7 +59,7 @@
     <!-- ▼自由編集箇所▼ -->
     <div id="wrapper">
         <div class="buybtn">
-            <a href="#size"><img src="img/img241011/linepoint_btn.png"></a>
+            <!-- <a href="#event2"><img src="img/event_0705/float_btn.png"></a> -->
         </div>
         <div id="contents_standard" class="contents">
             <!-- selectProductWithProduct -->
@@ -111,7 +111,6 @@
                     </a>
                     <img src="./img/img240909/sp_01_fv.png" alt="">
                     <img id="event" src="./img/img240909/sp_01_event.png">
-                    <img src="./img/img241011/linepoint.png">
                     <!-- <img id="event" src="./img/img240909/sp_01_event.png" alt="" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#lotterypopup"> -->
                     <img src="./img/img240909/sp_no01.png" alt="">
                     <a href="#size">

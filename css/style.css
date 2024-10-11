@@ -6,71 +6,43 @@ html, body {
 }
 
 .main {
-    width: 100%;
-    margin: 0 auto;
-}
-
-
-.main img {
     width: 750px;
     display: block;
     margin: 0 auto;
 }
 
+img {
+    width: 100%;
+}
+
 @media screen and (max-width: 768px) {
-    .main img {
+    .main{
         width: 100%;
     }
 
-    .main .line_btn {
+    .line_btn{
         width: 90%;
+        display: block;
+        margin: 0 auto;
     }
 }
 
-#nmerry .movie__box {
-    display: block;
-    position: relative;
-    width: 750px;
-    margin: 0 auto;
-    z-index: 2;
+.buybtn{
+    cursor:pointer;
+    width: 200px;
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    z-index: 99;
 }
-
-#nmerry .movie__item {
-    display: block;
-    position: absolute;
-    bottom: 48px;
-    left: 38px;
-}
-
-#nmerry .movie__size {
-    width: 675px;
-    height: 400px;
-    overflow: hidden;
-    display: block;
-    padding-bottom: 56.417%;
-}
-#nmerry .movie__item iframe, #nmerry .movie__item video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-    #nmerry .movie__box {
-        width: 100%;
+.buybtn img{width: 100%; height: auto;}
+@media screen and (max-width: 768px){
+    .buybtn{
+        width: 36%;
+        max-width: 170px;
     }
-    #nmerry .movie__box {
-        position: relative;
-      }
-      #nmerry .movie__item {
-          bottom: 3%;
-          left: 5%;
-          width: 90%;
-      }
-      #nmerry .movie__size {
-          width: 100%;
-          height: 0;
-      }
+}
+
+.popup_copybtn:hover{
+    opacity: 0.8;
 }
