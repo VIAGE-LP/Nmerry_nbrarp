@@ -16,38 +16,54 @@ $(document).ready(function () {
         }, 900);
     });
 
-    //copy折扣碼 
-    function copybtn(couponcode) {
+    $('a[href="#wheel_2025"]').click(function (e) {
+        e.preventDefault();
+        $('html , body').animate({
+            scrollTop: $('#wheel_2025').offset().top,
+        }, 900);
+    });
+
+    //coupon折扣 
+    function copybtn(money, couponcode) {
         // 複製（利用 Clipboard API 中的寫入功能）
         navigator.clipboard.writeText(couponcode);
-        // 提醒視窗
-        confirm(`恭喜您搶到「限量折扣碼」!\n您已成功複製折扣碼，請於購物車「優惠代碼」欄位輸入\n即可享優惠金額再折$100元。\n優惠代碼 : ${couponcode}`)
+        confirm(`恭喜您成功領取「限量」高額紅包折扣碼！\n於購物車「優惠代碼」欄位輸入 即可享優惠金額再折 ${money} 元\n優惠代碼 :  ${couponcode}`)
     }
 
     $(".copybtn").on("click", function () {
-        copybtn("24ns08ss");
+        copybtn(200, "ny25n200");
     });
+
+    // $(".coupon_200_A").on("click", function () {
+    //     copybtn(200, "ny24w200");
+    // });
+    // $(".coupon_150_A").on("click", function () {
+    //     copybtn(150, "150w24ny");
+    // });
+    // $(".coupon_100_A").on("click", function () {
+    //     copybtn(100, "w100ny24");
+    // });
+
 
 
     //draw popup視窗的copy折扣碼
-    function popup_copy() {
-        navigator.clipboard.writeText("202408SS");
-        confirm(`恭喜您成功複製轉盤折扣碼！\n請於購物車「優惠代碼」欄位輸入，\n即享最高會員優惠後再折$200元\n優惠代碼：202408SS`)
-    }
+    // function popup_copy() {
+    //     navigator.clipboard.writeText("202408SS");
+    //     confirm(`恭喜您成功複製轉盤折扣碼！\n請於購物車「優惠代碼」欄位輸入，\n即享最高會員優惠後再折$200元\n優惠代碼：202408SS`)
+    // }
 
-    const Urlhash = location.hash;
-    if (Urlhash == "#draw") {
-        let drawModal = new bootstrap.Modal(document.getElementById("draw_popup"));
-        //一進入畫面就顯示 draw popup
-        drawModal.show();
-        setTimeout(() => {
-            $("#draw_gif").attr("src", "img/popup_copy.png");
-            $("#draw_gif").css("cursor", "pointer");
-            $("#draw_gif").on("click", function () {
-                popup_copy();
-                drawModal.hide();
-            });
-        }, 6000);
-    } 
-
+    // const Urlhash = location.hash;
+    // if (Urlhash == "#draw") {
+    //     let drawModal = new bootstrap.Modal(document.getElementById("draw_popup"));
+    //     //一進入畫面就顯示 draw popup
+    //     drawModal.show();
+    //     setTimeout(() => {
+    //         $("#draw_gif").attr("src", "img/popup_copy.png");
+    //         $("#draw_gif").css("cursor", "pointer");
+    //         $("#draw_gif").on("click", function () {
+    //             popup_copy();
+    //             drawModal.hide();
+    //         });
+    //     }, 6000);
+    // }
 });

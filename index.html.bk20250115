@@ -3,7 +3,7 @@
 
 <head>
     <meta name="referrer" content="unsafe-url" />
-    <title>Nmerry享穿內衣 居家時光舒適感更加倍</title>
+    <title>Nmerry迎新春59折起✨領紅包再折200元✨舒適美胸 遠離鬆垮垂💕</title>
     <meta name="Description"
         content='Nmerry享穿內衣為業界第一家採用"雖然是相同商品，但會依照體型改變構造"的設計 👙不論是在家工作、做家事甚至只是耍廢發呆💦  透過能溫柔貼合所有罩杯尺寸的材質與設計，讓宅家時間更放鬆享受😚'>
     <meta name="keywords"
@@ -17,7 +17,7 @@
         content='Nmerry享穿內衣為業界第一家採用"雖然是相同商品，但會依照體型改變構造"的設計 👙不論是在家工作、做家事甚至只是耍廢發呆💦  透過能溫柔貼合所有罩杯尺寸的材質與設計，讓宅家時間更放鬆享受😚'>
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image" content="img/01.png">
+    <meta property="og:image" content="img/img241230/sp_01_fv.png">
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="google-site-verification" content="pCcxW19gvZyZKQUa5lqnK7vegyQo6L3rKf5nxlsHTSk" />
@@ -58,21 +58,26 @@
     <!-- 編集削除禁止※ACCESS　SCRIPT、CSS読み込み※編集削除禁止 -->
     <!-- ▼自由編集箇所▼ -->
     <div id="wrapper">
+        <div class="buybtn">
+              <a href="#event"><img src="img/img241230/btn.png"></a>
+        </div>
         <div id="contents_standard" class="contents">
             <!-- selectProductWithProduct -->
             <!-- ▼自由編集箇所▼ -->
-            <div class="main">
-                <!-- draw popup-->
-                <div class="modal fade" id="draw_popup" tabindex="-1" aria-labelledby="drawLabel" aria-hidden="true">
-                    <div class="modal-dialog" style="margin: 18vh auto;padding: 5%;">
-                        <div class="modal-content" style="border: none;background: transparent;">
-                            <div class="modal-body mx-auto p-0" style="text-align: center;">
-                                <img id="draw_gif" class="w-100" src="img/popup_draw.gif" alt="">
-                            </div>
+            <!-- 抽獎 popup-->
+            <!-- <div class="modal fade" id="lotterypopup" tabindex="-1" aria-labelledby="lotteryLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: transparent;border:none;">
+                        <div class="modal-body mx-auto" style="text-align: center;position: relative;">
+                            <img src="./img/img240909/lottery-2.png" alt="" style="width:100%;">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                style="position: absolute;top:7%;right:6%;"></button> 
                         </div>
                     </div>
                 </div>
+            </div> -->
 
+            <div class="main">
                 <div class="countdown_box">
                     <div id="cdtimer" style="display: none;">
                         <div class="countdown">
@@ -101,16 +106,24 @@
                     </div>
                 </div>
                 <div id="nmerry">
-                    <a href="#offer">
-                        <img src="./img/01_banner.png" alt="" class="copybtn" style="cursor: pointer;">
+                    <a href="#event">
+                        <img src="./img/img241230/sp_01_bn.png" alt="">
                     </a>
-                    <img src="./img/01.png" alt="">
-                    <a href="#offer">
-                        <img src="./img/event.png" alt="" class="copybtn" style="cursor: pointer;">
-                    </a>
-                    <img src="./img/02.png" alt="">
+                    <img src="./img/img241230/sp_01_fv.png" alt="">
+                    <!-- <div id="event">
+                        <img src="img/coupon/sp_coupon200_C.png" alt="">
+                        <img class="coupon_150_A" src="img/coupon/sp_coupon150_A.png" alt="" style="cursor: pointer;">
+                        <img class="coupon_100_A" src="img/coupon/sp_coupon100_A.png" alt="" style="cursor: pointer;">
+                        <a href="#offer">
+                            <img class="imgcss" src="img/coupon/sp_coupon_btn.png" alt="" style="cursor: pointer">
+                        </a>
+                    </div> -->
+                    <img id="event" class="copybtn" src="./img/img241230/sp_01_event.gif" style="cursor: pointer;">
+                    <!-- <img src="./img/img241011/linepoint.png"> -->
+                    <!-- <img id="event" src="./img/img240909/sp_01_event.png" alt="" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#lotterypopup"> -->
+                    <img src="./img/img241230/sp_no01.png" alt="">
                     <a href="#size">
-                        <img src="./img/03_offer.png" alt="" id="offer" style="cursor: pointer;">
+                        <img id="offer" src="./img/img241230/sp_offer.png" alt="" style="cursor: pointer;">
                     </a>
                     <div class="movie__box">
                         <img src="./img/04.png" alt="">

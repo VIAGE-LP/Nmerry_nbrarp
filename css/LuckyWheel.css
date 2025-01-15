@@ -1,0 +1,93 @@
+.wheel_box {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-image: url('../img/LuckyWheel/LuckyWheel_bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 750px;
+    margin: 0 auto;
+    position: relative;
+    background-size: 100%;
+}
+
+.wheel_ly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 16px;
+    padding-bottom: 48px;
+}
+
+.wheel_btn_text {
+    position: absolute;
+    z-index: 1000;
+    width: 26% !important;
+    left: 38%;
+    top: 36%;
+}
+
+.wheel_ly img {
+    width: 98%;
+}
+
+.wheel_btn_ly {
+    position: absolute;
+    transform-origin: 51% 54%;
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
+}
+
+@media screen and (max-width: 768px) {
+    .wheel {
+        grid-template: auto auto/auto auto;
+    }
+
+    .wheel_box {
+        width: 100%;
+    }
+
+    /* .wheel_ly img{
+        width: 80%;
+    } */
+    /* .wheel_btn_ly{
+        width: 70px;
+        height: 70px;
+    } */
+    .wheel_btn_text {
+        position: absolute;
+        z-index: 1000;
+        width: 25% !important;
+        left: 38%;
+        top: 33%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .wheel {
+        grid-template: auto auto/auto auto;
+    }
+
+    .wheel_box {
+        width: 100%;
+    }
+
+    .wheel_ly img {
+        width: 100%;
+    }
+
+    .wheel_ly {
+        padding-bottom: 2.5vh;
+    }
+
+    .wheel_btn_ly img {
+        max-width: 30vw;
+    }
+
+    .wheel_btn_text {
+        width: 30vw !important;
+        left: 36%;
+        top: 35%;
+    }
+}
