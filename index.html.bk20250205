@@ -122,7 +122,7 @@
 
                     <!-- 2025開工 轉盤 -->
                     <!-- <img id="wheel_2025" src="img/LuckyWheel/event.png" alt="" class="imgcss"> -->
-                    <div class="wheel_box" id="wheel_2025">
+                    <div class="wheel_box">
                         <div class="wheel_ly" id="wheel_ly">
                             <img class="wheel_btn_text" src="img/LuckyWheel/LuckyWheel_btn_text.png" alt=""
                                 style="cursor: pointer;">

@@ -1,0 +1,57 @@
+$(document).ready(function () {
+    //時間到自動切換圖片
+    const switch_time = new Date('2024/08/24 00:00:00'); // 切換時間
+    const now_time = new Date();
+    if(now_time < switch_time){
+        $(".original_img").show();
+    }else{
+        $(".switch_img").show();
+    }
+
+
+    $('a[href="#size"]').click(function (e) {
+        e.preventDefault();
+        $('html , body').animate({
+            scrollTop: $('#size').offset().top,
+        }, 900);
+    });
+
+    //coupon折扣 
+    function copybtn(money, couponcode) {
+        // 複製（利用 Clipboard API 中的寫入功能）
+        navigator.clipboard.writeText(couponcode);
+        confirm(`恭喜您成功複製折扣碼！\n期間內不限方案，\n請於購物車「優惠代碼」欄位輸入 即可享優惠金額再折 ${money} 元\n優惠代碼 :  ${couponcode}`)
+    }
+
+    // $(".coupon_200_A").on("click", function () {
+    //     copybtn(200, "ny24w200");
+    // });
+    $(".coupon_150_A").on("click", function () {
+        copybtn(150, "150w24ny");
+    });
+    $(".coupon_100_A").on("click", function () {
+        copybtn(100, "w100ny24");
+    });
+
+
+    //draw popup視窗的copy折扣碼
+    // function popup_copy() {
+    //     navigator.clipboard.writeText("202408SS");
+    //     confirm(`恭喜您成功複製轉盤折扣碼！\n請於購物車「優惠代碼」欄位輸入，\n即享最高會員優惠後再折$200元\n優惠代碼：202408SS`)
+    // }
+
+    // const Urlhash = location.hash;
+    // if (Urlhash == "#draw") {
+    //     let drawModal = new bootstrap.Modal(document.getElementById("draw_popup"));
+    //     //一進入畫面就顯示 draw popup
+    //     drawModal.show();
+    //     setTimeout(() => {
+    //         $("#draw_gif").attr("src", "img/popup_copy.png");
+    //         $("#draw_gif").css("cursor", "pointer");
+    //         $("#draw_gif").on("click", function () {
+    //             popup_copy();
+    //             drawModal.hide();
+    //         });
+    //     }, 6000);
+    // }
+});
