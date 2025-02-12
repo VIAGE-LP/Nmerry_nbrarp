@@ -28,7 +28,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="css/countdown.css"> -->
     <link rel="stylesheet" href="css/LuckyWheel.css">
-    <link rel="stylesheet" href="css/birthday.css">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 
     <!-- ※LP用|編集削除禁止 -->
@@ -60,20 +59,6 @@
     <!-- 編集削除禁止※ACCESS　SCRIPT、CSS読み込み※編集削除禁止 -->
     <!-- ▼自由編集箇所▼ -->
     <div id="wrapper">
-
-        <!-- 會員生日折扣碼 -->
-        <div id="birthdayModal" style="display: none;">
-            <div class="birthdayModal-content">
-              <h2>🎉 祝賀 <span id="currentMonth"></span> 月生日快樂！ 🎂</h2>
-              <p>複製下方折扣碼於此網頁使用</p>
-              <div class="discount-code" id="discountCode"></div>
-              <button class="copy-btn" onclick="hbdcopyCode()">複製折扣碼</button>
-              <p>可享網頁表示價格 <b>再折$150元</b><br>不限金額，全品項方案皆適用</p>
-              <p>請務必收下這份禮物！</p>
-              <span class="close-btn" onclick="closeModal()">關閉</span>
-            </div>
-        </div>
-
         <div class="buybtn">
             <a href="#wheel_2025"><img src="img/img250205/btn.png"></a>
         </div>
@@ -219,7 +204,6 @@
     <script src="js/ga_param_cookie.js"></script>
     <!-- <script src="js/countdown.js"></script> -->
     <script src="js/LuckyWheel.js"></script>
-    <script src="js/birthday.js"></script>
     <script src="js/all.js"></script>
 </body>
 
