@@ -32,7 +32,7 @@ img {
     width: 200px;
     position: fixed;
     right: 0;
-    bottom: 30px;
+    bottom: 76px;
     z-index: 99;
 }
 .buybtn img{width: 100%; height: auto;}

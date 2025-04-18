@@ -1,0 +1,31 @@
+$(document).ready(function () {
+    // 定义点击事件处理程序
+    function scrollToSize(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $('#size').offset().top
+        }, 900);
+    }
+    $('a[href="#size"]').click(scrollToSize);
+    $('.coupon_btn').click(scrollToSize);
+
+    // copy折扣碼_多個
+    // function copybtn(money, couponcode,specail) {
+    //     // 複製（利用 Clipboard API 中的寫入功能）
+    //     navigator.clipboard.writeText(couponcode);
+    //     // 提醒視窗
+    //     confirm(`您已成功複製折扣碼：${couponcode}！\n結帳時於購物車輸入，即享活動優惠折扣+整單再折${money}元\n${specail}`)
+    //     popupModal.hide();
+    // }
+
+    // $(".coupon_200").on("click", function () {
+    //     copybtn(200, "200N2406");
+    // });
+    // $(".coupon_150").on("click", function () {
+    //     copybtn(150, "150N2406","");
+    // });
+    // $(".coupon_100").on("click", function () {
+    //     copybtn(100, "100N2406","");
+    // });
+
+});

@@ -2,28 +2,40 @@
 .countdown_box{
     width: 750px;
     margin: 0 auto;
-    background-color: #ffffff;
-    /* text-shadow: 2px 2px 2px #6c9774, -2px 2px 2px #6c9774, 2px -2px 2px #6c9774, -2px -2px 2px #6c9774; */
-    color: #304EE7;
+    background-color: #fce993;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 36px;
     font-weight: bold;
+    color: #061331;
+
 }
 .countdown_box #cdtimer,.countdown_box #cdtimer_day{
     display: none;
 }
 .countdown{
     display: flex;
+    margin: 0 auto;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 8px;
+    background: #fce993;
+    width: 100%;
 }
 .main-content{
     display: flex;
 }
+.countdown_title {
+    color: #0d204e;
+}
+
 .timer-box .number{
-    color: #FFFC1C;
-    padding-left: 8px;
-    text-shadow: 2px 2px 2px #304EE7, -2px 2px 2px #304EE7, 2px -2px 2px #304EE7, -2px -2px 2px #304EE7;
+    color: #0d204e;
+    padding-left: 16px;
+    
+}
+
+.countdown .timer-box .name{
+    font-size: 16px;
+    color: #061331;
 }
 
 @media screen and (max-width: 768px){
